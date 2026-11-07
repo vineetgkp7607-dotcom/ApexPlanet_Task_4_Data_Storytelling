@@ -1,0 +1,119 @@
+# BUSINESS STORY REPORT
+## Sales Data Analysis and Customer Insights
+
+### 1. Business Objective
+
+The objective of this project is to analyze sales data, understand customer purchasing behaviour, identify sales trends, and generate useful business insights. The analysis combines data cleaning, exploratory data analysis, customer segmentation, KPI calculation, and statistical hypothesis testing.
+
+### 2. Data Preparation
+
+The dataset contains 1,000 sales records and 12 columns.
+
+During data preparation:
+- 20 missing Age values were replaced with the median age of 41.
+- 13 missing City values were replaced with "Unknown".
+- No invalid dates were found.
+- No duplicate rows were found.
+
+These steps helped prepare the dataset for further analysis.
+
+### 3. Exploratory Data Analysis
+
+Exploratory Data Analysis was performed using Python, Pandas, Matplotlib, Seaborn, and MySQL.
+
+Key observations:
+- Electronics was the highest-revenue category, contributing approximately ₹51 million.
+- Laptop had the highest product-level sales, at approximately ₹25.4 million.
+- Mobile had the highest number of orders, with 184 records.
+- March recorded the highest monthly sales, at approximately ₹13.1 million.
+- September recorded the lowest monthly sales, at approximately ₹9.2 million.
+
+These findings help identify strong product categories and changes in monthly sales performance.
+
+### 4. Business KPIs
+
+The Task 3 analysis reported the following KPIs:
+
+- Total Revenue: ₹139,399,439.65
+- Total Orders: 992
+- Average Order Value: ₹140,523.63
+- Total Customers: 947
+- Average Quantity per Order: 5.48
+
+These KPIs provide an overview of the recorded sales performance.
+
+### 5. Customer Segmentation
+
+RFM analysis was used to understand customer purchasing behaviour.
+
+The 947 customers were divided into five segments:
+
+- Regular Customers: 463
+- Recent Customers: 234
+- Potential Loyalists: 202
+- Champions: 38
+- At Risk: 10
+
+Key observations:
+- Regular Customers form the largest segment.
+- Recent Customers represent an opportunity to build long-term relationships.
+- Potential Loyalists may respond well to loyalty offers.
+- Champions can be encouraged to continue their engagement.
+- At Risk customers may need targeted retention campaigns.
+
+### 6. Hypothesis Testing
+
+Business Question:
+
+Do male and female customers differ in average sales?
+
+Statistical Test:
+Welch's Independent Two-Sample T-Test.
+
+Results:
+- Male Customers: 468
+- Female Customers: 445
+- Customers Excluded due to inconsistent gender records: 34
+- Male Average Sales: ₹143,641.79
+- Female Average Sales: ₹138,779.51
+- P-Value: 0.53479654
+- Significance Level: 0.05
+
+Decision:
+
+Fail to Reject the Null Hypothesis.
+
+Business Interpretation:
+
+The p-value is greater than 0.05, so there is insufficient statistical evidence of a difference in average customer sales between male and female groups.
+
+This result does not prove that the two groups spend exactly the same amount.
+
+### 7. Business Recommendations
+
+Based on the analysis:
+
+1. Focus on Electronics, which generated the highest category revenue.
+2. Use targeted campaigns to encourage repeat purchases.
+3. Develop loyalty offers for Potential Loyalists.
+4. Run retention campaigns for customers who may be at risk.
+5. Monitor monthly sales to understand seasonal changes.
+6. Use customer data to improve marketing decisions rather than relying on gender-based assumptions.
+
+### 8. Data Limitations
+
+The dataset contains 1,000 rows but only 992 distinct Order_ID values. Some Order_ID values are repeated across different customers and records.
+
+Therefore, the reported order count and Average Order Value should be treated with caution until the order identifiers are validated.
+
+Also, 34 customers with inconsistent gender records were excluded from hypothesis testing.
+
+### 9. Final Conclusion
+
+The analysis provides an overview of sales performance, product and category trends, and customer purchasing behaviour.
+
+Electronics contributed the highest category revenue, while customer segmentation identified opportunities for customer retention and loyalty campaigns.
+
+Hypothesis testing did not find sufficient statistical evidence of a difference in average customer sales between male and female groups.
+
+Overall, the findings can help the business make more informed decisions about sales performance, customer engagement, and marketing strategies.

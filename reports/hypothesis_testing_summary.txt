@@ -1,0 +1,53 @@
+
+HYPOTHESIS TESTING SUMMARY
+=======================================
+
+Business Question:
+Do male and female customers differ in average sales?
+
+Null Hypothesis (H0):
+There is no difference in average customer sales.
+
+Alternative Hypothesis (H1):
+There is a difference in average customer sales.
+
+Statistical Test:
+Welch's Independent Two-Sample T-Test
+
+Significance Level: 0.05
+
+DATA SUMMARY
+---------------------------------------
+Male Customers: 468
+Female Customers: 445
+Customers Excluded (Inconsistent Gender): 34
+
+Male Average Sales: Rs. 143,641.79
+Female Average Sales: Rs. 138,779.51
+
+Mean Difference (Male - Female): Rs. 4,862.28
+
+STATISTICAL RESULTS
+---------------------------------------
+T-Statistic: 0.620937
+P-Value: 0.53479654
+Degrees of Freedom: 908.44
+
+95% Confidence Interval:
+Lower Bound: Rs. -10,505.79
+Upper Bound: Rs. 20,230.35
+
+DECISION
+---------------------------------------
+Fail to Reject the Null Hypothesis
+
+BUSINESS CONCLUSION
+---------------------------------------
+There is insufficient statistical evidence of a difference in average customer sales between male and female groups.
+
+Note:
+This analysis identifies an association between gender
+groups and average customer sales. It does not establish
+that gender causes differences in spending.
+
+=======================================
